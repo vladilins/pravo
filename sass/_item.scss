@@ -1,0 +1,57 @@
+.item {
+  background: #000;
+  position: relative;
+  text-transform: uppercase;
+  // transition-property: background, border-color;
+  // transition-duration: 0.2s, 0.2s;
+  // transition-timing-function: ease, ease;
+  // transition-delay: 0s, 0s;
+  &__link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: block;
+    width: 100%;
+    cursor: crosshair;
+  }
+  &__img {
+    margin: -1.5rem 0 0 -1.5rem;
+    padding-bottom: 1.5rem;
+    // transition: margin 0.2s 0s ease, padding 0.2s 0s ease;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+  }
+  &__box {
+    padding: 1.5rem;
+  }
+  &__num {
+    font-size: 1.2rem;
+  }
+  &__name {
+    font-size: 2.5rem;
+    margin: 4rem 0;
+  }
+  &__table {
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    border: 2px solid $color-primary;
+    padding: 0.5rem;
+    width: 60%;
+  }
+
+  &__text {
+  }
+  &__stars {
+  }
+}
+
+.br-1 {
+  border: 0.6rem solid $color-border;
+  box-sizing: border-box;
+}
+.br-2 {
+  border: 0.7rem solid $color-primary;
+  box-sizing: border-box;
+}

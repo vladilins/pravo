@@ -1,0 +1,48 @@
+.nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 120rem;
+  height: 6rem;
+  margin: 0 auto;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  &__sk {
+    width: 19rem;
+    margin-left: 1rem;
+    margin-right: 4rem;
+  }
+  &__pravo {
+    width: 16rem;
+  }
+  .menu-btn {
+    margin-right: 1rem;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    transition: all 0.5s ease-out;
+  }
+  .menu-btn.close {
+    transform: rotate(180deg);
+  }
+  .menu-btn.close .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-btn.close .btn-line:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-btn.close .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+}

@@ -1,0 +1,24 @@
+.header {
+  &__h1 {
+    font-size: 7.5rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  &__h2 {
+    font-size: 3rem;
+    margin-top: 0;
+  }
+  &__icons {
+    .icon {
+      margin-right: 1rem;
+      position: relative;
+      background-color: #000;
+      border: 2px solid #fff;
+      display: inline-block;
+      height: 3.5rem;
+      width: 3.5rem;
+      padding: 0.5rem;
+    }
+  }
+}
