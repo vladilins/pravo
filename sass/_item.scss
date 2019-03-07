@@ -2,10 +2,7 @@
   background: #000;
   position: relative;
   text-transform: uppercase;
-  // transition-property: background, border-color;
-  // transition-duration: 0.2s, 0.2s;
-  // transition-timing-function: ease, ease;
-  // transition-delay: 0s, 0s;
+
   &__link {
     position: absolute;
     left: 0;
@@ -18,7 +15,7 @@
   &__img {
     margin: -1.5rem 0 0 -1.5rem;
     padding-bottom: 1.5rem;
-    // transition: margin 0.2s 0s ease, padding 0.2s 0s ease;
+
     vertical-align: middle;
     max-width: 100%;
     height: auto;

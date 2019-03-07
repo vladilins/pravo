@@ -315,7 +315,6 @@ body {
   line-height: 1.5; }
 
 .bg {
-  /* The image used */
   background: #000 url("../img/bg.jpg") no-repeat top center/cover;
   background-attachment: scroll;
   background-attachment: fixed; }
