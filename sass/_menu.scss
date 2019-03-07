@@ -1,0 +1,37 @@
+// Menu Overlay
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+  visibility: hidden;
+  background: $color-border;
+  max-width: 50rem;
+  color: $color-primary;
+  overflow-y: auto;
+  text-transform: uppercase;
+
+  &.show {
+    visibility: visible;
+    z-index: 1000;
+  }
+  &__items {
+    padding: 4rem 3rem;
+    list-style: none;
+  }
+  &__item {
+    border-top: 0.2rem solid $color-primary;
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-primary;
+  }
+  &__num {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  &__name {
+  }
+}
