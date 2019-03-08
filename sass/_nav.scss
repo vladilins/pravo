@@ -11,11 +11,18 @@
   z-index: 100;
   background: rgba(0, 0, 0, 0.6);
   &__sk {
+    @media only screen and (max-width: $bp-small) {
+      width: 10rem;
+      margin-right: 2rem;
+    }
     width: 19rem;
     margin-left: 1rem;
     margin-right: 4rem;
   }
   &__pravo {
+    @media only screen and (max-width: $bp-small) {
+      width: 9rem;
+    }
     width: 16rem;
   }
   // Menu Button

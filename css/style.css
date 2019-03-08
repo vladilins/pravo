@@ -332,29 +332,46 @@ body {
   margin: 4rem auto; }
 
 .main {
+  padding: 0 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 3rem; }
 
-.header__h1 {
-  font-size: 7.5rem;
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 0.5rem; }
-
-.header__h2 {
-  font-size: 3rem;
-  margin-top: 0; }
-
-.header__icons .icon {
-  margin-right: 1rem;
-  position: relative;
-  background-color: #000;
-  border: 2px solid #fff;
-  display: inline-block;
-  height: 3.5rem;
-  width: 3.5rem;
-  padding: 0.5rem; }
+.header {
+  padding: 0 2rem; }
+  .header__h1 {
+    font-size: 7.5rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0.5rem; }
+    @media only screen and (max-width: 62.5em) {
+      .header__h1 {
+        font-size: 5.5rem; } }
+    @media only screen and (max-width: 40.625em) {
+      .header__h1 {
+        font-size: 3rem; } }
+  .header__h2 {
+    font-size: 3rem;
+    margin-top: 0; }
+    @media only screen and (max-width: 62.5em) {
+      .header__h2 {
+        font-size: 2.5rem; } }
+    @media only screen and (max-width: 40.625em) {
+      .header__h2 {
+        font-size: 2rem; } }
+  .header__icons .icon {
+    margin-right: 1rem;
+    position: relative;
+    background-color: #000;
+    border: 2px solid #fff;
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    padding: 0.5rem; }
+    @media only screen and (max-width: 62.5em) {
+      .header__icons .icon {
+        height: 2.5rem;
+        width: 2.5rem; } }
 
 .nav {
   position: sticky;
@@ -371,8 +388,15 @@ body {
     width: 19rem;
     margin-left: 1rem;
     margin-right: 4rem; }
+    @media only screen and (max-width: 40.625em) {
+      .nav__sk {
+        width: 10rem;
+        margin-right: 2rem; } }
   .nav__pravo {
     width: 16rem; }
+    @media only screen and (max-width: 40.625em) {
+      .nav__pravo {
+        width: 9rem; } }
   .nav .menu-btn {
     margin-right: 1rem;
     z-index: 2000000000000 !important;
@@ -440,6 +464,9 @@ body {
     vertical-align: middle;
     max-width: 100%;
     height: auto; }
+    @media only screen and (max-width: 56.6rem) {
+      .item__img {
+        width: 100%; } }
   .item__box {
     padding: 1.5rem; }
   .item__num {
@@ -447,6 +474,10 @@ body {
   .item__name {
     font-size: 2.5rem;
     margin: 4rem 0; }
+    @media only screen and (max-width: 40.625em) {
+      .item__name {
+        font-size: 2rem;
+        margin: 3rem 0; } }
   .item__table {
     font-size: 1.1rem;
     margin: 1.5rem 0;
