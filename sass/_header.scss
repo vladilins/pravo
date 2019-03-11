@@ -60,15 +60,17 @@
     .icon__bg:hover {
       background: $color-border;
       // display: none;
-
+      @include easeOut;
       .icon {
         margin: -1.2rem 0 0 -1.2rem;
         background: $color-border;
         border: 2px solid #fff;
         padding: 0.5rem;
+        @include easeOut;
       }
       #icon {
         margin: 0 !important;
+        @include easeOut;
       }
     }
   }

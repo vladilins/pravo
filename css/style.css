@@ -399,14 +399,17 @@ body {
           height: 2.5rem;
           width: 2.5rem; } }
     .header__icons .icon__bg:hover {
-      background: #00aaba; }
+      background: #00aaba;
+      transition: all 0.2s ease-out; }
       .header__icons .icon__bg:hover .icon {
         margin: -1.2rem 0 0 -1.2rem;
         background: #00aaba;
         border: 2px solid #fff;
-        padding: 0.5rem; }
+        padding: 0.5rem;
+        transition: all 0.2s ease-out; }
       .header__icons .icon__bg:hover #icon {
-        margin: 0 !important; }
+        margin: 0 !important;
+        transition: all 0.2s ease-out; }
 
 .nav {
   position: sticky;
