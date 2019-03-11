@@ -321,7 +321,14 @@ body {
 
 .container {
   max-width: 120rem;
+  height: 80rem;
   margin: 0 auto; }
+  @media only screen and (max-width: 62.5em) {
+    .container {
+      height: 70rem; } }
+  @media only screen and (max-width: 40.625em) {
+    .container {
+      height: 60rem; } }
 
 .border {
   border: 0.7rem solid #00aaba;
@@ -333,9 +340,19 @@ body {
 
 .main {
   padding: 0 2rem;
+  margin-top: -45rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 3rem; }
+  @media only screen and (max-width: 62.5em) {
+    .main {
+      margin-top: -40rem; } }
+  @media only screen and (max-width: 40.625em) {
+    .main {
+      margin-top: -35rem; } }
+  @media only screen and (max-width: 379px) {
+    .main {
+      margin-top: -30rem; } }
 
 .header {
   padding: 0 2rem; }
