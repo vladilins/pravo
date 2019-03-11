@@ -376,19 +376,33 @@ body {
     @media only screen and (max-width: 40.625em) {
       .header__h2 {
         font-size: 2rem; } }
-  .header__icons .icon {
-    margin-right: 1rem;
-    position: relative;
-    background-color: #000;
-    border: 2px solid #fff;
-    display: inline-block;
-    height: 3.5rem;
-    width: 3.5rem;
-    padding: 0.5rem; }
-    @media only screen and (max-width: 62.5em) {
-      .header__icons .icon {
-        height: 2.5rem;
-        width: 2.5rem; } }
+  .header__icons {
+    display: flex;
+    margin-left: 1rem; }
+    .header__icons .icon {
+      vertical-align: middle;
+      max-width: 100%;
+      height: auto; }
+      @media only screen and (max-width: 62.5em) {
+        .header__icons .icon {
+          height: 2.5rem;
+          width: 2.5rem; } }
+    .header__icons .icon__bg {
+      background-color: #000;
+      border: 2px solid #fff;
+      margin-right: 1.5rem;
+      height: 3.5rem;
+      width: 3.5rem;
+      padding: 0.5rem; }
+    .header__icons .icon__bg:hover {
+      background: #00aaba; }
+      .header__icons .icon__bg:hover .icon {
+        margin: -1.2rem 0 0 -1.2rem;
+        background: #00aaba;
+        border: 2px solid #fff;
+        padding: 0.5rem; }
+      .header__icons .icon__bg:hover #icon {
+        margin: 0 !important; }
 
 .nav {
   position: sticky;

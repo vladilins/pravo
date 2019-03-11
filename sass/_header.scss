@@ -23,19 +23,49 @@
     margin-top: 0;
   }
   &__icons {
+    display: flex;
+    margin-left: 1rem;
     .icon {
       @media only screen and (max-width: $bp-medium) {
         height: 2.5rem;
         width: 2.5rem;
       }
-      margin-right: 1rem;
-      position: relative;
+      // margin-right: 1rem;
+
+      // background-color: #000;
+      // border: 2px solid #fff;
+      vertical-align: middle;
+      max-width: 100%;
+      height: auto;
+
+      // border: 2px solid #fff;
+      // background-color: #000;
+
+      // height: 3rem;
+      // width: 3rem;
+      // padding: 0.5rem;
+    }
+    .icon__bg {
       background-color: #000;
       border: 2px solid #fff;
-      display: inline-block;
+      margin-right: 1.5rem;
       height: 3.5rem;
       width: 3.5rem;
       padding: 0.5rem;
+    }
+    .icon__bg:hover {
+      background: $color-border;
+      // display: none;
+
+      .icon {
+        margin: -1.2rem 0 0 -1.2rem;
+        background: $color-border;
+        border: 2px solid #fff;
+        padding: 0.5rem;
+      }
+      #icon {
+        margin: 0 !important;
+      }
     }
   }
 }
