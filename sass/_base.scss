@@ -12,7 +12,7 @@ $color-border: #00aaba;
 $font-primary: "Roboto", sans-serif;
 
 @mixin easeOut {
-  transition: all 0.5s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 html {

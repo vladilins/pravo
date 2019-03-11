@@ -438,13 +438,13 @@ body {
     right: 35px;
     top: 35px;
     cursor: pointer;
-    transition: all 0.5s ease-out; }
+    transition: all 0.2s ease-out; }
     .nav .menu-btn .btn-line {
       width: 28px;
       height: 3px;
       margin: 0 0 5px 0;
       background: #ffffff;
-      transition: all 0.5s ease-out; }
+      transition: all 0.2s ease-out; }
     .nav .menu-btn.close {
       transform: rotate(180deg); }
       .nav .menu-btn.close .btn-line:nth-child(1) {
@@ -465,11 +465,16 @@ body {
   max-width: 50rem;
   color: #ffffff;
   overflow-y: auto;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transform: translate3d(100%, 0, 0);
+  transition: all 0.5s ease-out; }
   .menu.show {
     visibility: visible;
-    z-index: 1000; }
+    z-index: 1000;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.5s ease-out; }
   .menu__items {
+    transition: all 0.5s ease-out;
     padding: 4rem 3rem;
     list-style: none; }
   .menu__item {
@@ -491,14 +496,17 @@ body {
     top: 0;
     height: 100%;
     display: block;
-    width: 100%;
-    cursor: crosshair; }
+    width: 100%; }
   .item__img {
     margin: -1.5rem 0 0 -1.5rem;
     padding-bottom: 1.5rem;
     vertical-align: middle;
     max-width: 100%;
     height: auto; }
+    @media only screen and (max-width: 40.625em) {
+      .item__img {
+        margin: 0;
+        padding-bottom: 0; } }
     @media only screen and (max-width: 56.6rem) {
       .item__img {
         width: 100%; } }
@@ -525,10 +533,12 @@ body {
   box-sizing: border-box; }
 
 .br-1:hover {
-  background: #00aaba; }
+  background: #00aaba;
+  transition: all 0.2s ease-out; }
   .br-1:hover #img {
     margin: 0 !important;
-    padding-bottom: 0 !important; }
+    padding-bottom: 0 !important;
+    transition: all 0.2s ease-out; }
 
 .br-2 {
   border: 0.7rem solid #ffffff;
@@ -536,7 +546,9 @@ body {
 
 .br-2:hover {
   border: 0.7rem solid rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease-out;
   background: #797979; }
   .br-2:hover #img {
     margin: 0 !important;
-    padding-bottom: 0 !important; }
+    padding-bottom: 0 !important;
+    transition: all 0.2s ease-out; }
